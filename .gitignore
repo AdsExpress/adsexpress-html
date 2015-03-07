@@ -1,0 +1,8 @@
+# --------------------
+# Bower Files
+# --------------------
+.bower-*/
+assets/libs/*
+
+
+!assets/libs/index.html

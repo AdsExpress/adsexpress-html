@@ -1,0 +1,19 @@
+{
+  "name": "AdssExpress-HTML",
+  "version": "0.0.1",
+  "authors": [
+    "Saleh Saiid <saleh.saiid@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2"
+  }
+}
