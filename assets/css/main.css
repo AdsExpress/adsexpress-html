@@ -1,6 +1,21 @@
 @import url('../fonts/Dinar_One_Light/fonts.css');
 @import url('../fonts/Dinar_One_Medium/fonts.css');
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
 body {
   font-family: 'Dinar_One_Light';
   font-size: 16px;
@@ -14,7 +29,22 @@ body {
   background-image: url(../img/navbar-express-bg.png);
 }
 
-.navbar-express .navbar-brand{
+.navbar-express .navbar-brand {
   float: left;
-  padding: 7px 7px;
+  padding: 7px 15px;
+}
+
+.navbar-express .navbar-toggle {
+  float: right;
+  color: #333;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0;
+  padding-left: 0px;
+}
+
+.navbar-express .express-navbar-link {
+  display: inline-block;
+  margin-top: 9px;
+  margin-bottom: 8px;
 }
