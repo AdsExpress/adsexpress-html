@@ -1,11 +1,12 @@
 @import url('../fonts/Dinar_One_Light/fonts.css');
 @import url('../fonts/Dinar_One_Medium/fonts.css');
+@import url('../fonts/Oxygen/fonts.css');
 
 body {
   font-family: 'Dinar_One_Light';
   font-size: 16px;
   color: #333;
-  padding-top: 64px;
+  padding-top: 62px;
   background-color: #333;
 }
 
@@ -35,7 +36,7 @@ body {
 
 .navbar-express .express-toggle {
   position: relative;
-  padding: 17px 10px;
+  padding: 17px 17px;
   float: right;
   margin-top: auto;
   margin-bottom: auto;
@@ -60,6 +61,33 @@ body {
   background-position: top center;
 }
 
+.tool-bar {
+  width: 100%;
+}
+
+.tool-bar .user {
+  padding-right: 17px;
+  padding-top: 10px;
+  width: 50%;
+}
+
+.tool-bar .user a {
+  font-family: 'Dinar_One_Light';
+  font-size: 16px;
+  color: #fff;
+}
+
+.tool-bar .lang {
+  padding-left: 17px;
+  padding-top: 10px;
+  width: 50%;
+}
+
+.tool-bar .lang a{
+  font-family: 'Oxygen';
+  font-size: 18px;
+  color: #fff;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -69,6 +97,7 @@ body {
 
   .container {
     width: 100%;
+    padding: 0;
   }
 
   .navbar-express .express-navbar-link {
@@ -77,6 +106,17 @@ body {
 
   .navbar-express .express-toggle {
     margin-left: 30px;
+    padding-right: 30px;
+  }
+
+  .tool-bar .user {
+    padding-top: 20px;
+    padding-right: 45px;
+  }
+
+  .tool-bar .lang {
+    padding-top: 20px;
+    padding-left: 45px;
   }
 }
 
