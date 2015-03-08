@@ -14,6 +14,7 @@
 
     <!-- Custome Styles -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/libs/slider-revolution/src/css/settings.css" media="screen" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,7 +50,7 @@
       </nav>
 
       <div class="row main no-gutter">
-        <div class="col-sm-12 intro">
+        <div class="col-sm-12 intro" id="intro">
           <div class="tool-bar">
             <div class="user pull-right">
               <a href="#" class="avatar"><img src="assets/img/avatar.png"></a>
@@ -59,6 +60,30 @@
               <a href="#" dir="rtl">English</a>
             </div>
           </div>
+
+          <div class="tp-container">
+            <ul>
+              <li data-transition="fadefromright" data-slotamount="5" data-masterspeed="700">
+                <img src="assets/img/intro.jpg"  data-bgrepeat="no-repeat" data-bgfit="cover" data-bgposition="center center">
+                <div class="caption sft express_big_white"
+                     data-x="center"
+                     data-y="100"
+                     data-speed="700"
+                     data-start="1700"
+                     data-easing="easeOutBack">أفضل الأشياء في الحياة</div>
+              </li>
+              <li data-transition="random" data-slotamount="5" data-masterspeed="700">
+                <img src="assets/img/intro.jpg"  data-bgrepeat="no-repeat" data-bgfit="cover" data-bgposition="center center">
+                <div class="caption sft express_big_white"
+                     data-x="center"
+                     data-y="100"
+                     data-speed="700"
+                     data-start="1700"
+                     data-easing="easeOutBack">أفضل الأشياء في الحياة</div>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
@@ -66,5 +91,31 @@
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/libs/slider-revolution/src/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="assets/libs/slider-revolution/src/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript">
+
+  		var revapi;
+
+  		jQuery(document).ready(function() {
+
+  			   revapi = jQuery('.tp-container').revolution(
+  				{
+  					delay:9000,
+  					startheight:945,
+            startwidth:1280,
+            navigationType:"bullet",
+            navigationStyle: 'round-old',
+            autowidth: 'on',
+            navigationVAlign: 'top',
+            navigationHAlign: 'right',
+            navigationVOffset: +60,
+            navigationHOffset: +40,
+            hideBulletsOnMobile: 'on',
+  				});
+
+  		});	//ready
+
+  	</script>
   </body>
 </html>
