@@ -24,33 +24,36 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container wrapper">
-      <nav class="navbar navbar-express navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" data-toggle="collapse" class="express-toggle">
-              <img src="assets/img/menu.svg" width="20" height="20">
-            </button>
 
-            <a type="button" class="express-navbar-link">
-              <img src="assets/img/home.svg" width="20" height="20">
-            </a>
-            <a type="button" class="express-navbar-link">
-              <img src="assets/img/deal.svg" width="20" height="20">
-            </a>
-            <a type="button" class="express-navbar-link">
-              <img src="assets/img/wishlist.svg" width="20" height="20">
-            </a>
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-express navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a type="button" class="express-navbar-link">
+            <img src="assets/img/menu.svg">
+          </a>
 
-            <a class="navbar-brand" href="#">
-              <img src="assets/img/express-logo.svg" width="150" height="30" class="img-responsive">
-            </a>
-          </div>
+          <a type="button" class="express-navbar-link">
+            <img src="assets/img/home.svg">
+          </a>
+          <a type="button" class="express-navbar-link">
+            <img src="assets/img/deal.svg">
+          </a>
+          <a type="button" class="express-navbar-link">
+            <img src="assets/img/wishlist.svg">
+          </a>
+
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/express-logo.svg" width="150" class="img-responsive">
+          </a>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <!-- End Navigation -->
 
-      <div class="row main no-gutter">
-        <div class="intro" id="intro">
+    <main class="container">
+      <div class="row">
+        <div class="col-sm-12" id="cover">
           <div class="tool-bar">
             <div class="user pull-right">
               <a href="#" class="avatar"><img src="assets/img/avatar.png"></a>
@@ -60,67 +63,14 @@
               <a href="#" dir="rtl">English</a>
             </div>
           </div>
-
-          <div class="tp-container">
-            <ul>
-              <li data-transition="fadefromright" data-slotamount="5" data-masterspeed="700">
-                <img src="assets/img/intro.jpg"  data-bgrepeat="no-repeat" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption sft express_big_white"
-                     data-x="center"
-                     data-y="100"
-                     data-speed="700"
-                     data-start="1700"
-                     data-easing="easeOutBack">أفضل الأشياء في الحياة</div>
-              </li>
-              <li data-transition="fadefromleft" data-slotamount="5" data-masterspeed="700">
-                <img src="assets/img/intro.jpg"  data-bgrepeat="no-repeat" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption sft express_big_white"
-                     data-x="center"
-                     data-y="100"
-                     data-speed="700"
-                     data-start="1700"
-                     data-easing="easeOutBack">أفضل الأشياء في الحياة</div>
-              </li>
-            </ul>
+          <div class="intro">
           </div>
-
         </div>
       </div>
-    </div>
+    </main>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/libs/slider-revolution/src/js/jquery.themepunch.plugins.min.js"></script>
-    <script src="assets/libs/slider-revolution/src/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript">
-
-  		var revapi;
-
-  		jQuery(document).ready(function() {
-
-  			   revapi = jQuery('.tp-container').revolution(
-  				{
-  					delay:9000,
-  					startheight:945,
-            startwidth:1280,
-            navigationType:"bullet",
-            navigationStyle: 'round-old',
-            autowidth: 'on',
-            navigationVAlign: 'top',
-            navigationHAlign: 'right',
-            navigationVOffset: +60,
-            navigationHOffset: +40,
-            hideBulletsOnMobile: 'on',
-            fullWidth: 'on',
-            forceFullWidth: 'on',
-            soloArrowRightValign:"center",
-            soloArrowLeftValign:"center",
-            hideThumbsOnMobile:"on"
-  				});
-
-  		});	//ready
-
-  	</script>
   </body>
 </html>
