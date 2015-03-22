@@ -65,7 +65,7 @@ body {
 
 .tool-bar .user a {
   font-family: 'Dinar_One_Light';
-  font-size: 16px;
+  font-size: 1.071em;
   color: #fff;
 }
 
@@ -97,9 +97,10 @@ body {
 
 .tool-bar .lang a{
   font-family: 'Oxygen';
-  font-size: 18px;
+  font-size: 1.143em;
   color: #fff;
 }
+
 
 .cover {
   position: relative;
