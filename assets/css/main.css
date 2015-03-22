@@ -24,7 +24,7 @@ body {
 
 .navbar-express .navbar-brand {
   float: left;
-  padding: 8px 15px 8px 10px;
+  padding: 8px 0 8px 10px;
   height: auto;
 }
 
@@ -32,8 +32,12 @@ body {
   display: inline-block;
   padding: 5px;
   margin-top: 13px;
-  margin-right: 11px;
+  margin-right: 3px;
   line-height: 0em;
+}
+
+.navbar-express .express-navbar-link:first-child {
+  margin-right: 10px;
 }
 
 .navbar-express .express-navbar-link img {
