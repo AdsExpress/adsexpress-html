@@ -188,6 +188,26 @@ body {
   box-shadow: none;
 }
 
+.home-section .title {
+  background-color: #E5E5E5;
+  height: 40px;
+  border-bottom: 1px solid #808080;
+}
+.home-section .title h4 {
+  font-family: 'Dinar_One_Medium';
+  font-size: 1.125em;
+  color: #333;
+  text-shadow: 1px 1px #fff;
+  margin: 0;
+  padding-top: 11px;
+  text-align: center;
+}
+
+.home-section .body {
+  background-image: url(../img/navbar-express-bg.png);
+  height: 440px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
