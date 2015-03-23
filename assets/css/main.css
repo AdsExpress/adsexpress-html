@@ -179,12 +179,12 @@ body {
   box-shadow: none;
 }
 
-.home-section .title {
+.home-section > .title {
   background-color: #E5E5E5;
   height: 40px;
   border-bottom: 1px solid #808080;
 }
-.home-section .title h4 {
+.home-section > .title h4 {
   font-family: 'Dinar_One_Medium';
   font-size: 1.125em;
   color: #333;
@@ -197,6 +197,59 @@ body {
 .home-section .body {
   background-image: url(../img/navbar-express-bg.png#body);
   height: 440px;
+}
+
+.grid-item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 15px auto;
+}
+
+.grid-item img {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.grid-item .item-info {
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  bottom: 0;
+  background-color: #1a1a1a;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  opacity: 0.9;
+  filter: alpha(opacity=97);
+}
+
+.grid-item .item-info .title {
+  padding: 2px 7px 0 0;
+  width: 100%;
+  height: 43px;
+}
+
+.grid-item .item-info .title a {
+  color: #fff;
+  font-family: 'Dinar_One_Medium';
+  font-size: 1.357em;
+}
+
+.grid-item .item-info .price {
+  font-family: 'Oxygen';
+  width: 100%;
+  color: #faad17;
+  font-size: 1em;
+  text-align: left;
+  padding-left: 7px;
+  font-weight: bold;
 }
 
 /* Small devices (tablets, 768px and up) */
