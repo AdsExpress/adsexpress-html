@@ -5,6 +5,8 @@
 	"compatible-vendor-prefixes": false,
 	"floats": false,
 	"font-sizes": false,
+	"bulletproof-font-face": false,
+	"font-faces": false,
 	"gradients": false,
 	"important": false,
 	"known-properties": false,
