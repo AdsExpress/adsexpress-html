@@ -1,7 +1,9 @@
+'use strict';
 
 module.exports = function(grunt){
 
   grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
     csslint: {
       options: {
         csslintrc: '.csslintrc'
@@ -20,12 +22,21 @@ module.exports = function(grunt){
         files: ['assets/css/*.css'],
         tasks: ['csslint']
       }
+    },
+    concurrent: {
+      tasks: ['http-server:dev', 'watch'],
+      options: {
+        logConcurrentOutput: true
+      }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-csslint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-http-server');
-  grunt.registerTask('default', ['csslint', 'http-server:dev', 'watch']);
+  //Load NPM tasks
+  require('load-grunt-tasks')(grunt);
+
+  grunt.hook.push('concurrent', 9999);
+  grunt.hook.push('csslint', 100);
+
+  grunt.registerTask('default', ['hook']);
 
 };

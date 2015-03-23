@@ -17,6 +17,6 @@
     "bootstrap": "~3.3.2",
     "bootstrap-rtl": "~3.3.1",
     "fontawesome": "~4.3.0",
-    "slider-revolution": "~4.3.7"
+    "OwlCarousel": "~1.3.2"
   }
 }

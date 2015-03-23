@@ -13,11 +13,15 @@
   "author": "Saleh Saiid <saleh.saiid@gmail.com>",
   "license": "BSD",
   "dependencies": {
-    "grunt": "~0.4.5"
+    "grunt": "~0.4.5",
+    "load-grunt-tasks": "~3.1.0",
+    "grunt-hook": "~0.3.1"
   },
   "devDependencies": {
     "grunt-contrib-csslint": "~0.4.0",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-http-server": "~1.2.0"
+    "grunt-http-server": "~1.2.0",
+    "grunt-concurrent": "~1.0.0",
+    "grunt-contrib-clean": "~0.6.0"
   }
 }
