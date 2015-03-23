@@ -22,19 +22,14 @@ module.exports = function(grunt){
         files: ['assets/css/*.css'],
         tasks: ['csslint']
       }
-    },
-    concurrent: {
-      tasks: ['http-server:dev', 'watch'],
-      options: {
-        logConcurrentOutput: true
-      }
     }
   });
 
   //Load NPM tasks
   require('load-grunt-tasks')(grunt);
 
-  grunt.hook.push('concurrent', 9999);
+  grunt.hook.push('watch', 9999);
+  grunt.hook.push('http-server:dev', 200);
   grunt.hook.push('csslint', 100);
 
   grunt.registerTask('default', ['hook']);
