@@ -8,6 +8,13 @@ module.exports = function(grunt){
       },
       src: ['assets/css/*.css']
     },
+    'http-server': {
+      dev: {
+        port: 8080,
+        cache: -1,
+        runInBackground: true
+      }
+    },
     watch: {
       css: {
         files: ['assets/css/*.css'],
@@ -18,6 +25,7 @@ module.exports = function(grunt){
 
   grunt.loadNpmTasks('grunt-contrib-csslint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('default', ['csslint', 'watch']);
+  grunt.loadNpmTasks('grunt-http-server');
+  grunt.registerTask('default', ['csslint', 'http-server:dev', 'watch']);
 
 };
