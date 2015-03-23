@@ -4,5 +4,12 @@
 .bower-*/
 assets/libs/*
 
+# --------------------
+# Node Files
+# --------------------
+.nodemonignore
+npm-debug.log
+node_modules/
+
 
 !assets/libs/index.html
