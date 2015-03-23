@@ -199,11 +199,16 @@ body {
   height: 440px;
 }
 
+.owl-carousel {
+  direction: ltr;
+}
+
 .grid-item {
   position: relative;
   width: 200px;
   height: 200px;
   margin: 15px auto;
+  direction: rtl;
 }
 
 .grid-item img {

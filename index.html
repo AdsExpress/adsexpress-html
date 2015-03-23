@@ -15,7 +15,11 @@
     <!-- Custome Styles -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/fonts.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/libs/slider-revolution/src/css/settings.css" media="screen" />
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="assets/libs/OwlCarousel/owl-carousel/owl.carousel.css">
+
+    <link rel="stylesheet" href="assets/libs/OwlCarousel/owl-carousel/owl.theme.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -93,25 +97,51 @@
         </div>
         <div class="col-sm-12 body clearfix">
 
-          <!-- grid item -->
-          <div class="grid-item">
-            <a href="#"><img src="assets/img/grid-item-img.jpg"></a>
-            <div class="item-info">
-              <div class="title"><a href="#">كاميرا للبيع Nikon D90</a></div>
-              <div class="price" dir="ltr">122,230 SYP</div>
+          <!-- .owl-carousel -->
+          <div id="owl-example" class="owl-carousel">
+            
+            <!-- grid item -->
+            <div class="grid-item">
+              <a href="#"><img src="assets/img/grid-item-img.jpg"></a>
+              <div class="item-info">
+                <div class="title"><a href="#">كاميرا للبيع Nikon D90</a></div>
+                <div class="price" dir="ltr">122,230 SYP</div>
+              </div>
             </div>
-          </div>
-          <!-- grid item -->
+            <!-- grid item -->
 
-          <!-- grid item -->
-          <div class="grid-item">
-            <a href="#"><img src="assets/img/grid-item-img-2.jpg"></a>
-            <div class="item-info">
-              <div class="title"><a href="#">كتب مستخدمة</a></div>
-              <div class="price" dir="ltr">122,230 SYP</div>
+            <!-- grid item -->
+            <div class="grid-item">
+              <a href="#"><img src="assets/img/grid-item-img-2.jpg"></a>
+              <div class="item-info">
+                <div class="title"><a href="#">كتب مستخدمة</a></div>
+                <div class="price" dir="ltr">122,230 SYP</div>
+              </div>
             </div>
+            <!-- grid item -->
+
+            <!-- grid item -->
+            <div class="grid-item">
+              <a href="#"><img src="assets/img/grid-item-img.jpg"></a>
+              <div class="item-info">
+                <div class="title"><a href="#">كاميرا للبيع Nikon D90</a></div>
+                <div class="price" dir="ltr">122,230 SYP</div>
+              </div>
+            </div>
+            <!-- grid item -->
+
+            <!-- grid item -->
+            <div class="grid-item">
+              <a href="#"><img src="assets/img/grid-item-img-2.jpg"></a>
+              <div class="item-info">
+                <div class="title"><a href="#">كتب مستخدمة</a></div>
+                <div class="price" dir="ltr">122,230 SYP</div>
+              </div>
+            </div>
+            <!-- grid item -->
+
           </div>
-          <!-- grid item -->
+          <!-- /.owl-carousel -->
 
         </div>
       </section>
@@ -125,5 +155,24 @@
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Include js plugin -->
+    <script src="assets/libs/OwlCarousel/owl-carousel/owl.carousel.js"></script>
+
+    <script>
+    $(document).ready(function() {
+
+      $("#owl-example").owlCarousel({
+        items : 10,
+        navigation : false,
+        pagination: false,
+        autoPlay: true,
+        stopOnHover: true,
+        scrollPerPage: 2,
+        direction: 'rtl'
+      });
+
+    });
+    </script>
   </body>
 </html>
