@@ -17,7 +17,6 @@ module.exports = function(grunt){
         runInBackground: true
       }
     },
-<<<<<<< HEAD
     jshint: {
       all: {
         options: {
@@ -26,15 +25,6 @@ module.exports = function(grunt){
         src: ['assets/js/*.js']
       }
     },
-||||||| merged common ancestors
-=======
-    jshint: {
-      options: {
-        jshintrc: true
-      },
-      files: ['assets/js/*.js']
-    },
->>>>>>> f534849478616652c4f889002c753d4ab6504652
     watch: {
       css: {
         files: ['assets/css/*.css'],
