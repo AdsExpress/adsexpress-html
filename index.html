@@ -98,8 +98,8 @@
         <div class="col-sm-12 body clearfix">
 
           <!-- .owl-carousel -->
-          <div id="owl-example" class="owl-carousel">
-            
+          <div id="latest-ads" class="owl-carousel">
+
             <!-- grid item -->
             <div class="grid-item">
               <a href="#"><img src="assets/img/grid-item-img.jpg"></a>
@@ -155,23 +155,15 @@
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Include utils -->
+    <script src="assets/js/utils.js"></script>
 
     <!-- Include js plugin -->
     <script src="assets/libs/OwlCarousel/owl-carousel/owl.carousel.js"></script>
 
     <script>
     $(document).ready(function() {
-
-      $("#owl-example").owlCarousel({
-        items : 10,
-        navigation : false,
-        pagination: false,
-        autoPlay: true,
-        stopOnHover: true,
-        scrollPerPage: 2,
-        direction: 'rtl'
-      });
-
+      utils.initOwlCarousel($("#latest-ads"));
     });
     </script>
   </body>
