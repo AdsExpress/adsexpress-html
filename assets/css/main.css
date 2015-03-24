@@ -256,6 +256,24 @@ body {
   font-weight: bold;
 }
 
+.deal-day {
+  position: relative;
+  height: 200px;
+  background-color: #F42534;
+}
+
+.deal-day .deal-banner {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 260px;
+  height: 57px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
