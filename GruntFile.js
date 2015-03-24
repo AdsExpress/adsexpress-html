@@ -17,6 +17,12 @@ module.exports = function(grunt){
         runInBackground: true
       }
     },
+    jshint: {
+      options: {
+        jshintrc: true
+      },
+      files: ['assets/js/*.js']
+    },
     watch: {
       css: {
         files: ['assets/css/*.css'],
@@ -29,8 +35,9 @@ module.exports = function(grunt){
   require('load-grunt-tasks')(grunt);
 
   grunt.hook.push('watch', 9999);
-  grunt.hook.push('http-server:dev', 200);
-  grunt.hook.push('csslint', 100);
+  grunt.hook.push('http-server:dev', 300);
+  grunt.hook.push('csslint', 200);
+  grunt.hook.push('jshint', 100);
 
   grunt.registerTask('default', ['hook']);
 
