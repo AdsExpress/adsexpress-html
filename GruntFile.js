@@ -8,7 +8,7 @@ module.exports = function(grunt){
       options: {
         csslintrc: '.csslintrc'
       },
-      src: ['assets/css/*.css']
+      src: ['assets/css/**/*.css']
     },
     'http-server': {
       dev: {
@@ -22,16 +22,16 @@ module.exports = function(grunt){
         options: {
           jshintrc: true
         },
-        src: ['assets/js/*.js']
+        src: ['assets/js/**/*.js']
       }
     },
     watch: {
       css: {
-        files: ['assets/css/*.css'],
+        files: ['assets/css/**/*.css'],
         tasks: ['csslint']
       },
       js: {
-        files: ['assets/js/*.js'],
+        files: ['assets/js/**/*.js'],
         tasks: ['jshint']
       }
     }
