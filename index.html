@@ -7,10 +7,11 @@
     <title>AdsExpress</title>
 
     <!-- Bootstrap -->
-    <link href="assets/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap RTL -->
     <link href="assets/libs/bootstrap-rtl/dist/css/bootstrap-rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/font-awesome.min.css">
 
     <!-- Custome Styles -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -61,7 +62,7 @@
 
       <!-- Cover -->
       <section class="row cover">
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <div class="tool-bar">
             <div class="user pull-right">
               <a href="#" class="avatar"><img src="assets/img/avatar.png"></a>
@@ -95,7 +96,7 @@
         <div class="title">
           <h4>آخر الإعلانات</h4>
         </div>
-        <div class="col-sm-12 body clearfix">
+        <div class="col-xs-12 body clearfix">
 
           <!-- .owl-carousel -->
           <div id="latest-ads" class="owl-carousel">
@@ -153,12 +154,13 @@
       </section>
       <!-- Deal of The Day -->
 
+      <!-- Rrecommended Ads. -->
       <section class="row home-section">
         <div class="title">
           <h4>اخترنا لك</h4>
         </div>
 
-        <div class="col-sm-12 body clearfix">
+        <div class="col-xs-12 body clearfix">
 
           <!-- .owl-carousel -->
           <div id="recommended-ads" class="owl-carousel">
@@ -198,6 +200,74 @@
 
         </div>
       </section>
+      <!-- Rrecommended Ads. -->
+
+      <!-- Categories -->
+      <section class="row home-section">
+        <div class="title">
+          <h4>أقسام الموقع</h4>
+        </div>
+
+        <div class="col-xs-12 body categories clearfix">
+          <ul class="visible-xs-inline">
+            <li>
+              <a href="#">
+                <i class="fa fa-desktop" ></i>
+                قسم الكمبيوتر
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-home" ></i>
+                قسم المنزليات
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-bolt" ></i>
+                قسم الإلكترونيات
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-desktop" ></i>
+                قسم الكمبيوتر
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-home" ></i>
+                قسم المنزليات
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-bolt" ></i>
+                قسم الإلكترونيات
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-desktop" ></i>
+                قسم الكمبيوتر
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-home" ></i>
+                قسم المنزليات
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-bolt" ></i>
+                قسم الإلكترونيات
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Categories -->
 
     </main>
     <!-- End Main -->
@@ -206,7 +276,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/css/bootstrap/js/bootstrap.min.js"></script>
     <!-- Include utils -->
     <script src="assets/js/utils.js"></script>
 
@@ -215,8 +285,7 @@
 
     <script>
     $(document).ready(function() {
-      utils.initOwlCarousel($("#latest-ads"));
-      utils.initOwlCarousel($("#recommended-ads"));
+      utils.initOwlCarousel($("#latest-ads, #recommended-ads"));
     });
     </script>
   </body>

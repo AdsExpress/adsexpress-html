@@ -274,6 +274,46 @@ body {
   height: 57px;
 }
 
+.home-section .categories.body {
+  background: #fff;
+  text-align: center;
+}
+
+.home-section .categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: none;
+}
+
+.home-section .categories ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 12px 7px;
+  width: 80px;
+  height: 80px;
+  background-color: #808080;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.home-section .categories ul li a {
+  display: block;
+  color: #fff;
+  font-family: 'Dinar_One_Medium';
+  font-size: 1em;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.home-section .categories ul li a i.fa {
+  font-size: 2em;
+  width: 100%;
+  margin-top: 6px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
