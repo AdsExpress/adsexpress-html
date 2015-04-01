@@ -35,7 +35,7 @@
     <nav class="navbar navbar-express navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a type="button" class="express-navbar-link">
+          <a type="button" class="express-navbar-link" id="burger-menu">
             <img src="assets/img/menu.svg">
           </a>
 
@@ -59,6 +59,13 @@
 
     <!-- Start Main -->
     <main class="container">
+
+      <!-- Start Menu -->
+      <div class="burger-menu">
+        <div class="menu"></div>
+        <div class="overlay"></div>
+      </div>
+      <!-- End Menu -->
 
       <!-- Cover -->
       <section class="row cover">
@@ -277,6 +284,7 @@
     </footer>
     <!-- End Footer -->
 
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -290,6 +298,10 @@
     <script>
     $(document).ready(function() {
       utils.initOwlCarousel($("#latest-ads, #recommended-ads"));
+
+      $('#burger-menu').click(function(){
+        $('.burger-menu').toggleClass('open');
+      });
     });
     </script>
   </body>
