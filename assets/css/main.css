@@ -6,6 +6,16 @@ body {
   background-color: #333;
 }
 
+.btn-express {
+  color: #fff;
+  background-color: #F42534;
+  font-family: 'Dinar_One_Medium';
+  font-size: 1.25em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
 .navbar-express {
   border-color: #1a1a1a;
   background-image: url(../img/navbar-express-bg.png);
@@ -152,13 +162,6 @@ body {
 }
 
 .intro .search .btn-search {
-  color: #fff;
-  background-color: #F42534;
-  font-family: 'Dinar_One_Medium';
-  font-size: 1.25em;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   margin: 1px;
   float: left;
 }
@@ -277,41 +280,13 @@ body {
 .home-section .categories.body {
   background: #fff;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.home-section .categories ul {
-  list-style: none;
-  padding: 0;
+.home-section .categories .btn-seemore{
+  max-width: 280px;
   margin: 0 auto;
-  display: none;
-}
-
-.home-section .categories ul li {
-  display: inline-block;
-  padding: 0;
-  margin: 12px 7px;
-  width: 80px;
-  height: 80px;
-  background-color: #808080;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.home-section .categories ul li a {
-  display: block;
-  color: #fff;
-  font-family: 'Dinar_One_Medium';
-  font-size: 1em;
-  width: 90%;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.home-section .categories ul li a i.fa {
-  font-size: 2em;
-  width: 100%;
-  margin-top: 6px;
 }
 
 .footer {
