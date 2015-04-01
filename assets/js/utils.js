@@ -3,7 +3,7 @@ utils = (function(){
 
   return {
     initOwlCarousel : function($selector, custom){
-      let defaults = {
+      var defaults = {
         items : 4,
         navigation : false,
         pagination: false,
@@ -12,7 +12,7 @@ utils = (function(){
         scrollPerPage: 4
       };
 
-      let options = $.extend(defaults, custom);
+      var options = $.extend(defaults, custom);
 
       $selector.owlCarousel(options);
     }
