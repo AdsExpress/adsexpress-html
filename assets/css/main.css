@@ -373,6 +373,56 @@ body {
   margin: 1px;
   float: left;
 }
+
+.footer .contact{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer .contact .phone{
+  font-family: 'Oxygen';
+  font-size: 1.286em;
+  color: #fff;
+}
+
+.footer .social{
+  display: inline;
+  margin-right: 21px;
+}
+
+.footer .social a{
+  display:inline-block;
+  font-size: 2em;
+  margin-left: 17px;
+  color: #808080;
+}
+
+.footer .social a:last-child{
+  margin-left: 0px;
+}
+
+.footer .links{
+  font-size: 1em;
+  color: #808080;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer .links a{
+  display: inline-block;
+  color: inherit;
+  margin: 4px;
+}
+
+.footer .copyrights {
+  font-size: 0.929em;
+  color: #808080;
+  text-align: center;
+  margin: 20px 0;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
