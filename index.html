@@ -13,14 +13,14 @@
     <link href="assets/libs/bootstrap-rtl/dist/css/bootstrap-rtl.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/libs/fontawesome/css/font-awesome.min.css">
 
-    <!-- Custome Styles -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/fonts.css" rel="stylesheet">
-
     <!-- Important Owl stylesheet -->
     <link rel="stylesheet" href="assets/libs/OwlCarousel/owl-carousel/owl.carousel.css">
 
     <link rel="stylesheet" href="assets/libs/OwlCarousel/owl-carousel/owl.theme.css">
+
+    <!-- Custome Styles -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/fonts.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,19 +35,33 @@
     <nav class="navbar navbar-express navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a type="button" class="express-navbar-link" id="burger-menu">
+
+          <a type="button" class="express-navbar-link visible-xs-inline-block" id="burger-menu">
             <img src="assets/img/menu.svg">
           </a>
-
-          <a type="button" class="express-navbar-link">
+          <a type="button" class="express-navbar-link visible-xs-inline-block">
             <img src="assets/img/home.svg">
           </a>
-          <a type="button" class="express-navbar-link">
+          <a type="button" class="express-navbar-link visible-xs-inline-block">
             <img src="assets/img/deal.svg">
           </a>
-          <a type="button" class="express-navbar-link">
+          <a type="button" class="express-navbar-link visible-xs-inline-block">
             <img src="assets/img/wishlist.svg">
           </a>
+
+          <span class="sm-links hidden-xs">
+            <a type="botton" href="#" class="express-navbar-link">
+              الصفحة الرئيسية
+            </a>
+            <a type="botton" href="#" class="express-navbar-link">
+              الإشعارات
+            </a>
+            <a type="botton" href="#" class="express-navbar-link">
+              إضافة إعلان
+            </a>
+          </span>
+
+
 
           <a class="navbar-brand" href="#">
             <img src="assets/img/express-logo.svg" width="140" class="img-responsive">
@@ -216,7 +230,7 @@
         </div>
 
         <div class="col-xs-12 body categories clearfix">
-          <a href="#" class="btn btn-express btn-lg btn-block btn-seemore">
+          <a href="#" class="btn btn-express btn-lg btn-block btn-seemore visible-xs-block">
             الأقسام الرئيسية
           </a>
         </div>

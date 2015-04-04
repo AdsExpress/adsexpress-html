@@ -6,6 +6,10 @@ body {
   background-color: #333;
 }
 
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
 .btn-express {
   color: #fff;
   background-color: #F42534;
@@ -40,6 +44,9 @@ body {
   margin-top: 13px;
   margin-right: 3px;
   line-height: 0;
+  color: #333;
+  font-family: 'Dinar_One_Medium';
+  font-size: 1.071em;
 }
 
 .navbar-express .express-navbar-link:first-child {
@@ -375,7 +382,7 @@ body {
 }
 
 .footer .social a:last-child{
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .footer .links{
@@ -423,7 +430,7 @@ body {
   width: 100%;
   height: 100%;
   top: 60px;
-  right: 0px;
+  right: 0;
   z-index: 1999;
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -441,10 +448,38 @@ body {
 /* Small devices (tablets, 750px and up) */
 @media (min-width: 750px) {
 
+  .container {
+    width:100%
+  }
+
+  .navbar-header {
+    float: none;
+    margin-right: -15px !important;
+  }
+  .navbar-brand {
+    margin: 0;
+  }
+
+  .navbar-express .express-navbar-link {
+    line-height: 1.7;
+    margin-top: 13px;
+  }
+
+  .navbar-express > .sm-links .express-navbar-link:first-child {
+    margin-right: 10px;
+  }
+
+  .intro > .express_big_white {
+    font-size: 2.143em;
+  }
 }
 
 /* Medium devices (desktops, 970px and up) */
 @media (min-width: 970px) {
+  .container {
+    width:970px
+  }
+
   .burger-menu {
     width: 970px;
     margin: 0 auto;
