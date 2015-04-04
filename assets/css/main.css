@@ -3,7 +3,7 @@ body {
   font-size: 14px;
   color: #333;
   padding-top: 59px;
-  background-color: #333;
+  background-color: #666;
 }
 
 a, a:hover, a:active {
@@ -289,6 +289,7 @@ a, a:hover, a:active {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin: 0 auto;
 }
 
 .home-section .categories .btn-seemore{
@@ -445,6 +446,43 @@ a, a:hover, a:active {
   display: table;
 }
 
+.categories-list {
+  display: none !important;
+}
+
+.categories-list .category-item {
+  width: 210px;
+  text-align: right;
+  margin: 15px auto;
+}
+
+.categories-list a{
+  color: #666;
+  font-size: 1em;
+  line-height: 1.9;
+}
+
+.categories-list ul {
+  list-style-position: inside;
+  direction: rtl;
+}
+
+.categories-list li{
+  margin-right: 20px;
+}
+
+.categories-list li.title {
+  list-style: none;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
+.categories-list li.title a{
+  font-family: 'Dinar_One_Medium';
+  font-size: 1.143em;
+  color: #333;
+}
+
 /* Small devices (tablets, 750px and up) */
 @media (min-width: 750px) {
 
@@ -472,17 +510,16 @@ a, a:hover, a:active {
   .intro > .express_big_white {
     font-size: 2.143em;
   }
+
+  .categories-list {
+    display: block !important;
+  }
 }
 
 /* Medium devices (desktops, 970px and up) */
 @media (min-width: 970px) {
   .container {
     width:970px
-  }
-
-  .burger-menu {
-    width: 970px;
-    margin: 0 auto;
   }
 }
 

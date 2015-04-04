@@ -233,6 +233,102 @@
           <a href="#" class="btn btn-express btn-lg btn-block btn-seemore visible-xs-block">
             الأقسام الرئيسية
           </a>
+
+          <div class="owl-carousel categories-list" id="categories-carousel">
+
+            <div class="category-item">
+              <ul>
+                <li class="title">
+                  <a href="#">قسم المنزليات و الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أدوات الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أثاث</a>
+                </li>
+                <li>
+                  <a href="#">أدوات المطبخ</a>
+                </li>
+                <li>
+                  <a href="#">تجهيزات منزلية</a>
+                </li>
+                <li>
+                  <a href="#">الإنارة</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="category-item">
+              <ul>
+                <li class="title">
+                  <a href="#">قسم المنزليات و الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أدوات الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أثاث</a>
+                </li>
+                <li>
+                  <a href="#">أدوات المطبخ</a>
+                </li>
+                <li>
+                  <a href="#">تجهيزات منزلية</a>
+                </li>
+                <li>
+                  <a href="#">الإنارة</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="category-item">
+              <ul>
+                <li class="title">
+                  <a href="#">قسم المنزليات و الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أدوات الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أثاث</a>
+                </li>
+                <li>
+                  <a href="#">أدوات المطبخ</a>
+                </li>
+                <li>
+                  <a href="#">تجهيزات منزلية</a>
+                </li>
+                <li>
+                  <a href="#">الإنارة</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="category-item">
+              <ul>
+                <li class="title">
+                  <a href="#">قسم المنزليات و الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أدوات الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أثاث</a>
+                </li>
+                <li>
+                  <a href="#">أدوات المطبخ</a>
+                </li>
+                <li>
+                  <a href="#">تجهيزات منزلية</a>
+                </li>
+                <li>
+                  <a href="#">الإنارة</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
         </div>
       </section>
       <!-- Categories -->
@@ -312,6 +408,10 @@
     <script>
     $(document).ready(function() {
       utils.initOwlCarousel($("#latest-ads, #recommended-ads"));
+      utils.initOwlCarousel($("#categories-carousel"), {
+        autoPlay: false,
+        autoHeight: true
+      });
 
       $('#burger-menu').click(function(){
         $('.burger-menu').toggleClass('open');
