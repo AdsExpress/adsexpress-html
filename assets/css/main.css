@@ -501,11 +501,6 @@ a, a:hover, a:active {
     margin: 0;
   }
 
-  .navbar-express .express-navbar-link {
-    line-height: 1.7;
-    margin-top: 13px;
-  }
-
   .navbar-express > .sm-links .express-navbar-link:first-child {
     margin-right: 10px;
   }
