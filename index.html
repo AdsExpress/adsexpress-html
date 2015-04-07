@@ -16,7 +16,7 @@
     <!-- Important Owl stylesheet -->
     <link rel="stylesheet" href="assets/libs/OwlCarousel/owl-carousel/owl.carousel.css">
 
-    <link rel="stylesheet" href="assets/libs/OwlCarousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/owl-theme.css">
 
     <!-- Custome Styles -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -315,6 +315,29 @@
               </ul>
             </div>
 
+            <div class="category-item">
+              <ul>
+                <li class="title">
+                  <a href="#">قسم المنزليات و الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أدوات الحدائق</a>
+                </li>
+                <li>
+                  <a href="#">أثاث</a>
+                </li>
+                <li>
+                  <a href="#">أدوات المطبخ</a>
+                </li>
+                <li>
+                  <a href="#">تجهيزات منزلية</a>
+                </li>
+                <li>
+                  <a href="#">الإنارة</a>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>
@@ -394,11 +417,20 @@
 
     <script>
     $(document).ready(function() {
-      utils.initOwlCarousel($("#latest-ads, #recommended-ads"));
+      utils.initOwlCarousel($("#latest-ads, #recommended-ads"), {
+        itemsCustom: [
+          [0, 1],
+          [500, 2],
+          [730, 3],
+          [900, 4]
+        ],
+        pagination : true
+      });
       utils.initOwlCarousel($("#categories-carousel"), {
-        items : 4,
+        item: 5,
         autoPlay: false,
-        autoHeight: true
+        autoHeight: true,
+        pagination : true
       });
 
       $('#burger-menu').click(function(){
