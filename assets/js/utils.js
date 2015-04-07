@@ -4,7 +4,7 @@ utils = (function(){
   return {
     initOwlCarousel : function($selector, custom){
       var defaults = {
-        items : 3,
+        items : 4,
         navigation : false,
         pagination: false,
         autoPlay: true,

@@ -36,31 +36,18 @@
       <div class="container">
         <div class="navbar-header">
 
-          <a type="button" class="express-navbar-link visible-xs-inline-block" id="burger-menu">
+          <a type="button" class="express-navbar-link burger-link" id="burger-menu">
             <img src="assets/img/menu.svg">
           </a>
-          <a type="button" class="express-navbar-link visible-xs-inline-block">
+          <a type="button" class="express-navbar-link">
             <img src="assets/img/home.svg">
           </a>
-          <a type="button" class="express-navbar-link visible-xs-inline-block">
+          <a type="button" class="express-navbar-link">
             <img src="assets/img/deal.svg">
           </a>
-          <a type="button" class="express-navbar-link visible-xs-inline-block">
+          <a type="button" class="express-navbar-link">
             <img src="assets/img/wishlist.svg">
           </a>
-
-          <span class="sm-links hidden-xs">
-            <a type="botton" href="#" class="express-navbar-link">
-              الصفحة الرئيسية
-            </a>
-            <a type="botton" href="#" class="express-navbar-link">
-              الإشعارات
-            </a>
-            <a type="botton" href="#" class="express-navbar-link">
-              إضافة إعلان
-            </a>
-          </span>
-
 
 
           <a class="navbar-brand" href="#">
@@ -409,6 +396,7 @@
     $(document).ready(function() {
       utils.initOwlCarousel($("#latest-ads, #recommended-ads"));
       utils.initOwlCarousel($("#categories-carousel"), {
+        items : 4,
         autoPlay: false,
         autoHeight: true
       });

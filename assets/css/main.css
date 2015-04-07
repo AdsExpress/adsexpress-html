@@ -1,9 +1,10 @@
 body {
   font-family: 'Dinar_One_Light';
   font-size: 14px;
-  color: #333;
+  color: #000;
   padding-top: 59px;
-  background-color: #666;
+  background-color: #fff;
+  background-image: url(../img/navbar-express-bg.png#body1);
 }
 
 a, a:hover, a:active {
@@ -160,6 +161,7 @@ a, a:hover, a:active {
   -moz-border-radius: 5px;
   border-radius: 5px;
   width: 90%;
+  max-width: 800px;
   right: 0;
   left: 0;
   top: 0;
@@ -414,7 +416,7 @@ a, a:hover, a:active {
 .burger-menu .menu{
   display: table;
   position: fixed;
-  width: 200px;
+  width: 220px;
   height: 100%;
   top: 60px;
   background-color: #000;
@@ -422,7 +424,7 @@ a, a:hover, a:active {
   z-index: 2000;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-  right: -252px;
+  right: -221px;
 }
 
 .burger-menu .overlay {
@@ -483,13 +485,14 @@ a, a:hover, a:active {
   color: #333;
 }
 
-/* Small devices (tablets, 750px and up) */
-@media (min-width: 750px) {
-
+@media (max-width: 1199px) {
   .container {
     width:100%
   }
+}
 
+/* Small devices (tablets, 750px and up) */
+@media (min-width: 750px) {
   .navbar-header {
     float: none;
     margin-right: -15px !important;
@@ -518,12 +521,21 @@ a, a:hover, a:active {
 
 /* Medium devices (desktops, 970px and up) */
 @media (min-width: 970px) {
-  .container {
-    width:970px
-  }
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+}
+
+
+@media (min-width: 1610px) {
+  .burger-link {
+    display: none !important;
+  }
+
+  .burger-menu .menu {
+    right: 0;
+  }
 }
