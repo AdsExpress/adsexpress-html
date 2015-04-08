@@ -1,7 +1,17 @@
-utils = (function(){
+var _config = {};
+
+utils = (function(config, $){
   'use strict';
 
   return {
+    // startup application
+    init : function(){
+      $('#burger-menu').click(function(){
+        $(this).toggleClass('open');
+        $('.burger-menu').toggleClass('open');
+      });
+    },
+
     initOwlCarousel : function($selector, custom){
       var defaults = {
         items : 4,
@@ -17,4 +27,4 @@ utils = (function(){
       $selector.owlCarousel(options);
     }
   };
-})();
+})(_config, window.jQuery);

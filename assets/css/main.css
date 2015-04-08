@@ -54,7 +54,8 @@ a, a:hover, a:active {
   margin-right: 10px;
 }
 
-.navbar-express .express-navbar-link img {
+.navbar-express .express-navbar-link img,
+.navbar-express .express-navbar-link svg {
   width: 19px;
   height: 19px;
 }
@@ -407,6 +408,14 @@ a, a:hover, a:active {
   color: #808080;
   text-align: center;
   margin: 20px 0;
+}
+
+.burger-link path {
+  fill: #333;
+}
+
+.burger-link.open path {
+  fill: #F42534;
 }
 
 .burger-menu {
