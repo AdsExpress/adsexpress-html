@@ -363,7 +363,7 @@ a, a:hover, a:active {
 .footer .contact{
   width: 90%;
   margin: 0 auto;
-  padding-top: 10px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -494,6 +494,11 @@ a, a:hover, a:active {
   color: #333;
 }
 
+.contacts {
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media (max-width: 1199px) {
   .container {
     width:100%
@@ -520,6 +525,31 @@ a, a:hover, a:active {
 
   .categories-list {
     display: block !important;
+  }
+
+  .footer .links {
+    text-align: left;
+    margin-left: -19px;
+    margin-top: 15px;
+  }
+
+  .footer .copyrights {
+    text-align: left;
+    margin-left: -16px;
+    margin-top: 0;
+  }
+
+  .footer .social {
+    margin-right: -35px;
+  }
+
+  .footer .social a{
+    font-size: 1.3em;
+  }
+
+  .footer .contact {
+    margin-top: 27px;
+    text-align: right;
   }
 }
 
