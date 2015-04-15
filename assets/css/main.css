@@ -499,6 +499,44 @@ a, a:hover, a:active {
   margin: 0 auto;
 }
 
+.category-page.body {
+  background: #fff;
+  padding-top: 34px;
+}
+
+.category-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-page .category-item {
+  width: 280px;
+  text-align: center;
+  padding-bottom: 34px;
+  margin: 0 auto;
+}
+
+.category-page .category-item .title{
+  background: #f2f2f2;
+  border-bottom: 1px solid #b3b3b3;
+  margin-bottom: 19px;
+}
+
+.category-page .category-item a {
+  display: block;
+  font-family: 'Dinar_One_Light';
+  font-size: 1em;
+  color: #666;
+  padding: 5px 0;
+}
+
+.category-page .category-item .title a{
+  font-family: 'Dinar_One_Medium';
+  font-size: 1.143em;
+  color: #333333;
+  padding: 14px 0;
+}
+
 @media (max-width: 1199px) {
   .container {
     width:100%
