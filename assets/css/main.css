@@ -591,6 +591,34 @@ a, a:hover, a:active {
   float: left;
 }
 
+.category-nav {
+  height: 100px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.category-nav .item {
+  float: right;
+  margin-top: 25px;
+}
+
+.category-nav .item a{
+  display: block;
+  width: 96px;
+  text-align: center;
+  color: #333;
+}
+
+.category-nav .item a span.title{
+  font-family: 'Dinar_One_Light';
+  font-size: 1em;
+}
+
+.category-nav .item a i {
+  font-size: 1.714em;
+  width: 100%;
+}
+
 @media (max-width: 1199px) {
   .container {
     width:100%
