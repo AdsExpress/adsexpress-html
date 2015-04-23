@@ -591,15 +591,23 @@ a, a:hover, a:active {
   float: left;
 }
 
+.search-view{
+  background-color: #fff;
+  position: relative;
+}
+
 .search-sidebar {
-  background-color: #f2f2f2;
+  position:absolute;
   width: 200px;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  background-color: #f2f2f2;
 }
 
 .search-result {
   padding-right: 15px;
   padding-left: 15px;
-  background: #fff;
 }
 
 .category-nav {
@@ -835,6 +843,10 @@ a, a:hover, a:active {
   .footer .contact {
     margin-top: 27px;
     text-align: right;
+  }
+
+  .search-result {
+    margin-right: 200px;
   }
 }
 
