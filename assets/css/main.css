@@ -848,11 +848,45 @@ a, a:hover, a:active {
   .search-result {
     margin-right: 200px;
   }
+
+  .search-navigation {
+    min-width: 470px;
+    max-width: 600px;
+  }
+
+  .items-list {
+    min-width: 470px;
+    max-width: 550px;
+  }
+
+  .items-list .item {
+    height: 120px;
+  }
+
+  .items-list .item .thumbnail {
+    width: 120px;
+    height: 120px;
+  }
+
+  .items-list .item .details {
+    margin-right: 135px;
+    height: 120px;
+  }
 }
 
 /* Medium devices (desktops, 970px and up) */
 @media (min-width: 970px) {
+  .items-list {
+    max-width: 800px;
+  }
 
+  .items-list .item {
+    
+  }
+
+  .search-navigation {
+    max-width: 900px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
