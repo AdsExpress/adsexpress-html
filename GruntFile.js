@@ -2,13 +2,15 @@
 
 module.exports = function(grunt){
 
+  var cssPaths = ['assets/css/**/*.css', '!assets/css/bootstrap/**/*.css', '!assets/css/owl-theme.css'];
+  
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     csslint: {
       options: {
         csslintrc: '.csslintrc'
       },
-      src: ['assets/css/**/*.css']
+      src: cssPaths
     },
     'http-server': {
       dev: {
@@ -27,7 +29,7 @@ module.exports = function(grunt){
     },
     watch: {
       css: {
-        files: ['assets/css/**/*.css'],
+        files: cssPaths,
         tasks: ['csslint']
       },
       js: {
