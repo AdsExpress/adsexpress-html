@@ -603,6 +603,7 @@ a, a:hover, a:active {
   right: 0;
   bottom: 0;
   background-color: #f2f2f2;
+  border-left: 1px solid #b3b3b3;
 }
 
 .search-result {
@@ -744,9 +745,8 @@ a, a:hover, a:active {
 .items-grid .item {
   width: 200px;
   height: 200px;
-  margin: 0 5px;
+  margin: 0 15px;
   margin-bottom: 12px;
-  float: right;
 }
 
 .items-grid .item .thumbnail{
