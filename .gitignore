@@ -11,5 +11,6 @@ assets/libs/*
 npm-debug.log
 node_modules/
 
+.idea
 
 !assets/libs/index.html
