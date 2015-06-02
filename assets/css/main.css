@@ -218,7 +218,7 @@ a, a:hover, a:active {
 .grid-item {
   position: relative;
   width: 200px;
-  height: 200px;
+  height: 250px;
   margin: 15px auto;
   direction: rtl;
 }
@@ -226,47 +226,52 @@ a, a:hover, a:active {
 .grid-item img {
   width: 200px;
   height: 200px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
 }
 
 .grid-item .item-info {
   position: absolute;
   width: 100%;
-  height: 65px;
+  height: 50px;
   bottom: 0;
-  background-color: #1a1a1a;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-bottom-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  opacity: 0.9;
-  filter: alpha(opacity=97);
+  background-color: #fff;
+    border: 1px solid #e6e6e6;
 }
 
 .grid-item .item-info .title {
   padding: 2px 7px 0 0;
   width: 100%;
-  height: 43px;
 }
 
 .grid-item .item-info .title a {
-  color: #fff;
+  color: #333;
   font-family: 'Dinar_One_Medium';
-  font-size: 1.357em;
+  font-size: 1.143em;
 }
 
 .grid-item .item-info .price {
   font-family: 'Oxygen';
   width: 100%;
-  color: #faad17;
+  color: #333;
   font-size: 1em;
   text-align: left;
   padding-left: 7px;
   font-weight: bold;
+}
+
+.grid-item .tag {
+    background-color: #f44336;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    text-align: center;
+    padding: 3px 5px;
+}
+
+.grid-item .tag span {
+    font-family: 'Dinar_One_Medium';
+    font-size: 1em;
+    color: #fff;
 }
 
 .deal-day {
