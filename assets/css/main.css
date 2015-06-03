@@ -676,12 +676,33 @@ a, a:hover, a:active {
 
 .search-navigation {
   margin: 12px auto;
+  margin-bottom: 0;
 }
 
 .search-navigation .search-navigation-inner{
-  height: 50px;
   background-color: #f2f2f2;
   border-bottom: 1px solid #b3b3b3;
+}
+
+.search-navigation .search-navigation-inner > div {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 43px;
+}
+
+.search-navigation .search-navigation-inner .control-label {
+  color: #333;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.search-navigation .search-navigation-inner .caret {
+  margin-top: -4px;
+}
+
+.search-navigation .search-navigation-inner .btn {
+  padding: 6px 13px;
 }
 
 .search-navigation .view-type {
@@ -689,13 +710,6 @@ a, a:hover, a:active {
   vertical-align: middle;
   text-align: left;
   height: 50px;
-}
-
-.search-navigation a{
-  display: inline-block;
-  font-size: 1.429em;
-  color: #bababa;
-  margin: 13px 12px 0 0;
 }
 
 .search-navigation a.active {
