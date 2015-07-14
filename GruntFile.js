@@ -3,7 +3,7 @@
 module.exports = function(grunt){
 
   var cssPaths = ['assets/css/**/*.css', '!assets/css/bootstrap/**/*.css', '!assets/css/owl-theme.css'];
-  
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     csslint: {
@@ -34,7 +34,19 @@ module.exports = function(grunt){
       },
       js: {
         files: ['assets/js/**/*.js'],
-        tasks: ['jshint']
+        tasks: ['jshint'],
+      },
+      configFiles: {
+        options: {
+          reload: true
+        },
+        files: ['GruntFile.js']
+      },
+      livereload: {
+        options: {
+          livereload: true
+        },
+        files: ['assets/js/**/*.js', cssPaths, '*.html']
       }
     }
   });
