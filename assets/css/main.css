@@ -11,19 +11,48 @@ a, a:hover, a:active {
   text-decoration: none;
 }
 
+
+/********* Custom Styles **********/
+
 .btn:hover, .btn:focus, .btn.focus {
   color: #fff;
+}
+
+.form-control, .form-control:focus {
+  border: none;
+  box-shadow: none;
 }
 
 .btn-express {
   color: #fff;
   background-color: #F42534;
   font-family: 'Dinar_One_Medium';
-  font-size: 15px;
+}
+
+.express-input-group {
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 1px
+}
+
+.express-input-group .form-control {
+  font-family: 'Dinar_One_Light';
+  font-size: 1.25em;
+  border: none;
+}
+
+.express-input-group .input-group-btn:last-child>.btn,
+.express-input-group .input-group-btn:last-child>.btn-group{
+  margin-right: 0px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
+/********* Site CSS *********/
+
 
 .navbar-express {
   border-color: #1a1a1a;
@@ -160,11 +189,7 @@ a, a:hover, a:active {
 
 .intro .search {
   position: absolute;
-  background: #fff;
-  height: 49px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  height: 48px;
   width: 90%;
   max-width: 800px;
   right: 0;
@@ -173,32 +198,6 @@ a, a:hover, a:active {
   bottom: 0;
   margin: auto;
   margin-bottom: 70px;
-}
-
-.intro .search .btn-search {
-  margin: 1px;
-  /*float: left;*/
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  padding: 10px 21px 11px;
-  font-size: 17px;
-}
-
-.intro .search .search-box{
-  /*float:right;
-  width: calc(100% - 70px);*/
-  height: 48px;
-  /*padding: 10px 16px;*/
-  line-height: 1.1;
-  font-size: 1.25em;
-  color: #999;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 
 .home-section > .title {
@@ -341,43 +340,6 @@ a, a:hover, a:active {
   margin: 25px auto;
   margin-top: 40px;
   line-height: 1.371;
-}
-
-.footer .subscription .subscription-input {
-  background: #fff;
-  height: 48px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.footer .subscription .subscription-input .subscription-box {
-  float:right;
-  width: calc(100% - 85px);
-  height: 48px;
-  padding: 10px 9px;
-  line-height: 1.1;
-  font-size: 1.071em;
-  color: #999;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-family: 'Dinar_One_Light';
-}
-
-.footer .subscription .subscription-input .btn-subscription {
-  color: #fff;
-  background-color: #F42534;
-  font-family: 'Dinar_One_Medium';
-  font-size: 1.25em;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  margin: 1px;
-  float: left;
 }
 
 .footer .contact{
@@ -566,49 +528,16 @@ a, a:hover, a:active {
   position: relative;
 }
 
-.search-top .inner .search-input {
+.search-top .inner .search {
   position: absolute;
-  background: #fff;
   height: 48px;
   width: 90%;
   max-width: 800px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   right: 0;
   left: 0;
   bottom: 0;
   top: 40px;
   margin: 0 auto;
-}
-
-.search-top .inner .search-input .search-box {
-  float:right;
-  width: calc(100% - 70px);
-  height: 48px;
-  padding: 10px 9px;
-  line-height: 1.1;
-  font-size: 1.071em;
-  color: #999;
-  border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  font-family: 'Dinar_One_Light';
-}
-
-.search-top .inner .search-input .btn-search {
-  color: #fff;
-  background-color: #F42534;
-  font-family: 'Dinar_One_Medium';
-  font-size: 1.25em;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  margin: 1px;
-  float: left;
 }
 
 .search-view{
