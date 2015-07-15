@@ -882,6 +882,74 @@ a, a:hover, a:active {
   color: #ADADAD
 }
 
+.item-view {
+  background-color: #fff;
+  padding: 15px 0 30px 0;
+}
+
+.item-view .item-image{
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.item-view .item-image .img{
+  width: 283px;
+  margin: 0 auto;
+}
+
+.item-view .item-info .inner{
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 12px;
+  min-height: 250px;
+}
+
+.item-view .item-info .title {
+  font-size: 1.286em;
+  font-family: 'Dinar_One_Medium';
+  color: #333;
+}
+
+.item-view .item-info p {
+  font-family: 'Dinar_One_Light';
+  color: #666;
+  font-size: 1em;
+  line-height: 1.7;
+}
+
+.item-view .item-info .more {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.214em;
+  color: #9d9d9d;
+}
+
+.item-view .item-info .keywords {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.item-view .item-info .keywords a {
+  display: inline-block;
+  background-color: #e5e1d9;
+  font-size: 1em;
+  color: #808080;
+  padding: 10px 15px;
+  margin-left: 5px;
+}
+
+.item-view .item-info .price {
+  position: absolute;
+  font-size: 1.214em;
+  font-family: 'Dinar_One_Medium';
+  background-color: #ffc106;
+  top: 12px;
+  left: 0;
+  padding: 3px 14px;
+  line-height: normal;
+}
+
 @media (max-width: 480px){
   .modal-dialog {
     width: 100%;
