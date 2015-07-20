@@ -39,6 +39,20 @@ a, a:hover, a:active {
   font-family: 'Dinar_One_Medium';
 }
 
+.btn-email {
+  font-family: 'Oxygen';
+  color: #fff;
+  background-color: #ffc107;
+  border-bottom: solid 2px #ffa000;
+}
+
+.btn-phone {
+  font-family: 'Oxygen';
+  color: #fff;
+  background-color: #8bc34a;
+  border-bottom: solid 2px #689f38;
+}
+
 .express-input-group {
   background: #fff;
   -webkit-border-radius: 5px;
@@ -942,12 +956,44 @@ a, a:hover, a:active {
 .item-view .item-info .price {
   position: absolute;
   font-size: 1.214em;
-  font-family: 'Dinar_One_Medium';
+  font-family: 'Oxygen';
   background-color: #ffc106;
   top: 12px;
   left: 0;
   padding: 3px 14px;
   line-height: normal;
+}
+
+.item-view .owner-info {
+  margin-top: 30px;
+}
+
+.item-view .owner-info .inner{
+  padding: 15px 0;
+  background-color: #fff;
+  border: 1px solid #e5e1d9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.item-view .owner-info .owner {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.item-view .owner-info .media-heading {
+  font-family: 'Dinar_One_Medium';
+}
+
+.item-view .owner-info .owner-connect {
+  padding: 4px;
+  padding-bottom: 0;
+}
+
+.item-view .owner-info .owner-connect .btn:first-child {
+  margin-bottom: 9px;
 }
 
 @media (max-width: 480px){
