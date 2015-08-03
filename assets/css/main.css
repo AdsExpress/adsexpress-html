@@ -1032,6 +1032,70 @@ a, a:hover, a:active {
   right: -3px;
 }
 
+.item-view .reviews {
+  margin-top: 30px;
+}
+
+.reviews .review{
+  padding-bottom: 15px;
+}
+
+.reviews .review > .review-content,
+.reviews .review > .review-avatar,
+.reviews .post-review > .review-content,
+.reviews .post-review > .review-avatar {
+  display: table-cell;
+}
+
+.reviews .review > .review-avatar,
+.reviews .post-review > .review-avatar {
+  padding-left: 15px;
+  vertical-align: top;
+}
+
+.reviews .review > .review-content {
+  width: 234px;
+  background-color: #f2f2f2;
+  padding: 9px;
+}
+
+.reviews .review > .review-content p {
+  color: #666;
+  width: 217px;
+  word-wrap: break-word;
+}
+
+.reviews .review > .review-content .name a {
+  font-family: 'Dinar_One_Medium';
+  color: #333;
+}
+
+.reviews .post-review > .review-content {
+  position: relative;
+}
+
+.reviews .post-review > .review-content textarea {
+  background: #fff;
+  width: 234px;
+  border: 2px solid #e5e1d9;
+  border-radius: 0;
+  color: #b3b3b3;
+  font-size: 1em;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.reviews .post-review > .review-content button {
+  font-family: 'Dinar_One_Medium';
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 0;
+  min-width: 60px;
+}
+
 @media (max-width: 480px){
   .modal-dialog {
     width: 100%;
