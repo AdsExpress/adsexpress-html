@@ -13,6 +13,11 @@
     <link href="assets/libs/bootstrap-rtl/dist/css/bootstrap-rtl.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/libs/fontawesome/css/font-awesome.min.css">
 
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="assets/libs/OwlCarousel/owl-carousel/owl.carousel.css">
+
+    <link rel="stylesheet" href="assets/css/owl-theme.css">
+
     <!-- Custome Styles -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/fonts.css" rel="stylesheet">
@@ -149,11 +154,32 @@
             <div class="owner-connect">
               <button class="btn btn-block btn-email btn-lg">info@domainname.com</button>
 
-              <button class="btn btn-block btn-phone btn-lg" dir="ltr"><i class="fa fa-phone"></i> +963933067744</button>
+              <button class="btn btn-block btn-phone btn-lg" dir="ltr"><i class="fa fa-phone"></i> +963 933 067 744</button>
             </div>
           </div>
         </div>
         <!-- End Owner info -->
+
+        <div class="col-xs-12 item-gallary">
+
+          <div id="item-gallary" class="owl-carousel">
+            <div class="ga-item">
+              <img src="assets/img/intro.jpg" width="100px" height="100px">
+            </div>
+
+            <div class="ga-item">
+              <img src="assets/img/intro.jpg" width="100px" height="100px">
+            </div>
+
+            <div class="ga-item">
+              <img src="assets/img/intro.jpg" width="100px" height="100px">
+            </div>
+          </div>
+          <div class="gallary-control">
+            <div class="next"><i class="fa fa-chevron-right"></i></div>
+            <div class="prev"><i class="fa fa-chevron-left"></i></div>
+          </div>
+        </div>
 
       </div>
 
@@ -228,10 +254,29 @@
     <!-- Include utils -->
     <script src="assets/js/utils.js"></script>
 
+    <!-- Include js plugin -->
+    <script src="assets/libs/OwlCarousel/owl-carousel/owl.carousel.js"></script>
+
     <script>
     $(document).ready(function() {
       // init app
       utils.init();
+
+      utils.initOwlCarousel($("#item-gallary"), {
+        itemsCustom: [
+          [0, 2],
+        ],
+        autoPlay: false,
+        navigation : false,
+      });
+
+      var gallarySlide = $("#item-gallary").data('owlCarousel');
+      $('.gallary-control .next').click(function(){
+        gallarySlide.next();
+      });
+      $('.gallary-control .prev').click(function(){
+        gallarySlide.prev();
+      })
     });
     </script>
   </body>

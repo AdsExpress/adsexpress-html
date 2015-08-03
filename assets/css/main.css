@@ -14,6 +14,12 @@ a, a:hover, a:active {
 
 /********* Custom Styles **********/
 
+.btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
 .btn:hover, .btn:focus, .btn.focus {
   color: #fff;
 }
@@ -978,7 +984,7 @@ a, a:hover, a:active {
 }
 
 .item-view .owner-info .owner {
-  width: 60%;
+  width: 150px;
   margin: 0 auto;
   margin-bottom: 15px;
 }
@@ -994,6 +1000,36 @@ a, a:hover, a:active {
 
 .item-view .owner-info .owner-connect .btn:first-child {
   margin-bottom: 9px;
+}
+
+.item-view .item-gallary {
+  margin-top: 30px;
+}
+
+.item-view .item-gallary .ga-item {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.item-view .item-gallary .gallary-control{
+  position: relative;
+}
+
+.item-view .item-gallary .gallary-control div {
+  position: absolute;
+  top: -60px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.item-view .item-gallary .gallary-control .prev {
+  left: -3px;
+}
+
+.item-view .item-gallary .gallary-control .next {
+  right: -3px;
 }
 
 @media (max-width: 480px){
