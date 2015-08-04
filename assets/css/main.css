@@ -1,7 +1,7 @@
 body {
   font-family: 'Dinar_One_Light';
   font-size: 14px;
-  color: #000;
+  color: #333;
   padding-top: 59px;
   background-color: #fff;
   background-image: url(../img/navbar-express-bg.png#body1);
@@ -9,6 +9,22 @@ body {
 
 a, a:hover, a:active {
   text-decoration: none;
+}
+
+[class*="fa-facebook"] {
+  color: #3b5998;
+}
+
+[class*="fa-twitter"] {
+  color: #55acee;
+}
+
+[class*="fa-google-plus"] {
+  color: #d34836;
+}
+
+[class*="fa-pinterest"] {
+  color: #CB2027;
 }
 
 
@@ -109,6 +125,18 @@ a, a:hover, a:active {
 
 /********* Site CSS *********/
 
+.section-title {
+  text-align: center;
+  background-color: #e5e5e5;
+  padding: 18px 0;
+}
+
+.section-title  h4{
+  font-family: 'Dinar_One_Medium';
+  font-size: 1.286em;
+  color: #333;
+  margin: 0;
+}
 
 .navbar-express {
   border-color: #1a1a1a;
@@ -917,40 +945,40 @@ a, a:hover, a:active {
   margin: 0 auto;
 }
 
-.item-view .item-info .inner{
+.item-view .item-details .inner{
   position: relative;
   background-color: #f2f2f2;
   padding: 12px;
   min-height: 250px;
 }
 
-.item-view .item-info .title {
+.item-view .item-details .title {
   font-size: 1.286em;
   font-family: 'Dinar_One_Medium';
   color: #333;
 }
 
-.item-view .item-info p {
+.item-view .item-details p {
   font-family: 'Dinar_One_Light';
   color: #666;
   font-size: 1em;
   line-height: 1.7;
 }
 
-.item-view .item-info .more {
+.item-view .item-details .more {
   margin-bottom: 10px;
   text-align: center;
   font-size: 1.214em;
   color: #9d9d9d;
 }
 
-.item-view .item-info .keywords {
+.item-view .item-details .keywords {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.item-view .item-info .keywords a {
+.item-view .item-details .keywords a {
   display: inline-block;
   background-color: #e5e1d9;
   font-size: 1em;
@@ -959,7 +987,7 @@ a, a:hover, a:active {
   margin-left: 5px;
 }
 
-.item-view .item-info .price {
+.item-view .item-details .price {
   position: absolute;
   font-size: 1.214em;
   font-family: 'Oxygen';
@@ -1010,7 +1038,11 @@ a, a:hover, a:active {
   width: 100px;
   margin: 0 auto;
   text-align: center;
+}
 
+.item-view .item-gallary .ga-item img{
+  width: 100px;
+  height: 100px;
 }
 
 .item-view .item-gallary .gallary-control{
@@ -1040,6 +1072,14 @@ a, a:hover, a:active {
   padding-bottom: 15px;
 }
 
+.item-view .related-ads {
+  margin-top: 15px;
+}
+
+.item-view .related-ads .section-title {
+  margin-bottom: 15px;
+}
+
 .reviews .review > .review-content,
 .reviews .review > .review-avatar,
 .reviews .post-review > .review-content,
@@ -1054,14 +1094,12 @@ a, a:hover, a:active {
 }
 
 .reviews .review > .review-content {
-  width: 234px;
   background-color: #f2f2f2;
   padding: 9px;
 }
 
 .reviews .review > .review-content p {
   color: #666;
-  width: 217px;
   word-wrap: break-word;
 }
 
@@ -1070,13 +1108,16 @@ a, a:hover, a:active {
   color: #333;
 }
 
+.reviews .post-review {
+  margin-bottom: 15px;
+}
+
 .reviews .post-review > .review-content {
   position: relative;
 }
 
 .reviews .post-review > .review-content textarea {
   background: #fff;
-  width: 234px;
   border: 2px solid #e5e1d9;
   border-radius: 0;
   color: #b3b3b3;
@@ -1094,6 +1135,12 @@ a, a:hover, a:active {
   color: #fff;
   border-radius: 0;
   min-width: 60px;
+}
+
+.reviews .review > .review-content,
+.reviews .post-review > .review-content,
+.reviews .post-review > .review-content textarea {
+  width: 100%;
 }
 
 @media (max-width: 480px){
@@ -1128,8 +1175,8 @@ a, a:hover, a:active {
   }
 }
 
-/* Small devices (tablets, 750px and up) */
-@media (min-width: 750px) {
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   .navbar-header {
     float: none;
     margin-right: -15px !important;
@@ -1206,10 +1253,37 @@ a, a:hover, a:active {
   .items-grid {
     padding-top: 12px;
   }
+
+  .item-view .item-gallary .ga-item {
+    width: 157px;
+  }
+
+  .item-view .item-gallary .ga-item img{
+    width: 157px;
+    height: 157px;
+  }
+
+  .item-view .item-gallary .gallary-control div {
+    top: -88px;
+  }
+
+  .item-view .item-gallary .gallary-control div .fa {
+    font-size: 1.3em;
+  }
+
+  .item-view .social-share {
+    width: 100%;
+    padding: 10px 0 10px 5px;
+  }
+
+  .item-view .social-share .fa {
+    font-size: 1.714em;
+    margin: 0 6px;
+  }
 }
 
-/* Medium devices (desktops, 970px and up) */
-@media (min-width: 970px) {
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   .items-list {
     max-width: 800px;
   }
