@@ -950,7 +950,7 @@ a, a:hover, a:active {
   position: relative;
   background-color: #f2f2f2;
   padding: 12px;
-  min-height: 250px;
+  min-height: 255px;
 }
 
 .item-view .item-details .title {
@@ -1291,6 +1291,20 @@ a, a:hover, a:active {
 
   .search-navigation {
     max-width: 900px;
+  }
+
+  .item-view .item-image .img{
+    width: 292px;
+    height: 292px;
+  }
+
+  .item-view .item-gallary .ga-item {
+    width: 132px;
+  }
+
+  .item-view .item-gallary .ga-item img{
+    width: 132px;
+    height: 132px;
   }
 }
 

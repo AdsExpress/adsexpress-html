@@ -97,13 +97,13 @@
 
       <div class="row item-view">
         <!-- Start Main image -->
-        <div class="col-xs-12 col-sm-5 item-image">
+        <div class="col-xs-12 col-sm-5 col-md-4 item-image">
           <img class="img" src="assets/img/intro.jpg">
         </div>
         <!-- End Main image -->
 
         <!-- Start Main info -->
-        <div class="col-xs-12 col-sm-7 item-details">
+        <div class="col-xs-12 col-sm-7 col-md-8 item-details">
           <div class="inner">
             <h4 class="title">جهاز آيفون</h4>
             <p>
@@ -146,7 +146,7 @@
         <!-- End Main info -->
 
         <!-- Start Owner info -->
-        <div class="col-xs-12 owner-info">
+        <div class="col-xs-12 col-md-5 col-md-push-6 owner-info">
           <div class="inner">
             <div class="owner">
               <div class="media">
@@ -163,14 +163,15 @@
             </div>
 
             <div class="row owner-connect">
-              <div class="col-xs-12 col-sm-5 col-sm-offset-1"><button class="btn btn-block btn-email btn-lg">info@domainname.com</button></div>
-              <div class="col-xs-12 col-sm-5"><button class="btn btn-block btn-phone btn-lg" dir="ltr"><i class="fa fa-phone"></i> +963 933 067 744</button></div>
+              <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-10 col-md-offset-1"><button class="btn btn-block btn-email btn-lg">info@domainname.com</button></div>
+              <div class="clearfix visible-md-block"></div>
+              <div class="col-xs-12 col-sm-5 col-md-10 col-md-offset-1"><button class="btn btn-block btn-phone btn-lg" dir="ltr"><i class="fa fa-phone"></i> +963 933 067 744</button></div>
             </div>
           </div>
         </div>
         <!-- End Owner info -->
 
-        <div class="col-xs-12 item-gallary">
+        <div class="col-xs-12 col-md-6 col-md-pull-5 item-gallary">
 
           <div id="item-gallary" class="owl-carousel">
             <div class="ga-item">
@@ -216,7 +217,7 @@
         </div>
 
         <!-- Start reviews -->
-        <div class="col-xs-12 reviews">
+        <div class="col-xs-12 col-md-10 col-md-push-1 reviews">
 
           <!-- Start post review -->
           <div class="post-review">
@@ -457,7 +458,8 @@
       utils.initOwlCarousel($("#item-gallary"), {
         itemsCustom: [
           [0, 2],
-          [768, 4]
+          [768, 4],
+          [992, 3]
         ],
         autoPlay: false,
         navigation : false,
