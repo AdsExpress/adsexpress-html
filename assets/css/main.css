@@ -310,14 +310,14 @@ a, a:hover, a:active {
 .grid-item {
   position: relative;
   width: 200px;
-  height: 250px;
+  height: 275px;
   margin: 15px auto;
   direction: rtl;
 }
 
 .grid-item img {
   width: 200px;
-  height: 175px;
+  height: 200px;
 }
 
 .grid-item .item-info {
@@ -942,6 +942,7 @@ a, a:hover, a:active {
 
 .item-view .item-image .img{
   width: 283px;
+  height: 283px;
   margin: 0 auto;
 }
 
