@@ -11,19 +11,19 @@ a, a:hover, a:active {
   text-decoration: none;
 }
 
-[class*="fa-facebook"] {
+[class*="fa-facebook-square"] {
   color: #3b5998;
 }
 
-[class*="fa-twitter"] {
+[class*="fa-twitter-square"] {
   color: #55acee;
 }
 
-[class*="fa-google-plus"] {
+[class*="fa-google-plus-square"] {
   color: #d34836;
 }
 
-[class*="fa-pinterest"] {
+[class*="fa-pinterest-square"] {
   color: #CB2027;
 }
 
