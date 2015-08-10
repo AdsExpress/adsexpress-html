@@ -51,7 +51,7 @@ a, a:hover, a:active {
 }
 
 .form-control, .form-control:focus {
-  border: none;
+  border: 1px solid #b3b3b3;
   box-shadow: none;
 }
 
@@ -73,6 +73,21 @@ a, a:hover, a:active {
   color: #fff;
   background-color: #8bc34a;
   border-bottom: solid 2px #689f38;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.btn-twitter {
+  background-color: #55acee;
+  color: #fff;
+}
+
+.btn-google-plus {
+  background-color: #d34836;
+  color: #fff;
 }
 
 .express-input-group {
@@ -1142,6 +1157,46 @@ a, a:hover, a:active {
 .reviews .post-review > .review-content,
 .reviews .post-review > .review-content textarea {
   width: 100%;
+}
+
+.login {
+  background-color: #fff;
+}
+
+.page-btns {
+  margin: 30px 0 15px 0;
+  text-align: center;
+}
+
+.page-btns .btn {
+  font-family: 'Dinar_One_Medium';
+  width: 150px;
+  margin-top: 0;
+  background-color: #b6b6b6;
+  color: #fff;
+}
+
+.page-btns .btn.selected {
+  background-color: #727272;
+}
+
+.login .social-login-btn-group {
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.login .social-login-btn-group i.fa {
+  margin-top: 4px;
+}
+
+.login .social-login-btn-group .btn {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.login .form-express > div{
+  margin-bottom: 15px;
 }
 
 @media (max-width: 480px){
