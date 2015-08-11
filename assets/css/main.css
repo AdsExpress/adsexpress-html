@@ -7,6 +7,10 @@ body {
   background-image: url(../img/navbar-express-bg.png#body1);
 }
 
+main.container {
+  background-color: #fff;
+}
+
 a, a:hover, a:active {
   text-decoration: none;
 }
@@ -1191,12 +1195,24 @@ a, a:hover, a:active {
 }
 
 .login .social-login-btn-group .btn {
-  margin-top: 0;
-  margin-bottom: 15px;
+  text-align: right;
 }
 
-.login .form-express > div{
-  margin-bottom: 15px;
+.login .social-login-btn-group .btn+.btn {
+  margin-top: 15px;
+}
+
+.login .form-express > div+div {
+  margin-top: 15px;
+}
+
+.login .form-express > div:last-child {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-express .btn-express {
+  border-bottom: 2px solid #d32f2f;
 }
 
 @media (max-width: 480px){
