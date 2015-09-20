@@ -409,6 +409,21 @@ a, a:hover, a:active {
   height: 57px;
 }
 
+.deal-day .deal-chevron {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 45px;
+  text-align: center;
+  padding-top: 95px;
+  padding-left: 19px;
+}
+
+.deal-day .deal-chevron a{
+  color: #fff;
+  font-size: 1em;
+}
+
 .home-section .categories.body {
   background: #fff;
   text-align: center;
@@ -1477,4 +1492,54 @@ a, a:hover, a:active {
   .burger-menu .menu {
     right: 0;
   }
+}
+
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(3px, 0, 0);
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(3px, 0, 0);
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
