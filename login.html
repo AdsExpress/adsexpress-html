@@ -93,8 +93,8 @@
       <div class="row">
         <div class="page-btns">
           <div class="btn-group" role="group">
-            <button type="button" class="btn btn-block btn-lg selected">تسجيل الدخول</button>
-            <button type="button" class="btn btn-block btn-lg">إنشاء حساب</button>
+            <a type="button" role="tab" data-toggle="tab" aria-controls="login" href="#login" class="btn btn-block btn-lg selected">تسجيل الدخول</a>
+            <a type="button" role="tab" data-toggle="tab" aria-controls="register" href="#register" class="btn btn-block btn-lg">إنشاء حساب</a>
           </div>
         </div>
       </div>
@@ -107,19 +107,67 @@
           <button class="btn btn-lg btn-block btn-google-plus">ادخل بواسطة غوغل <i class="fa fa-google-plus pull-left"></i></button>
         </div>
 
-        <form class="form-express">
-          <div>
-            <input type="email" class="form-control input-lg" placeholder="البريد الإلكتروني">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="login">
+            <form class="form-express">
+              <div class="even">
+                <input type="email" class="form-control input-lg" placeholder="البريد الإلكتروني">
+              </div>
+
+              <div class="odd">
+                <input type="password" class="form-control input-lg" placeholder="كلمة المرور">
+              </div>
+
+              <div>
+                <button class="btn btn-express btn-lg btn-block">تسجيل الدخول</button>
+              </div>
+            </form>
           </div>
 
-          <div>
-            <input type="password" class="form-control input-lg" placeholder="كلمة المرور">
-          </div>
+          <div role="tabpanel"  class="tab-pane" id="register">
+            <form class="form-express">
+              <div class="even">
+                <input type="text" class="form-control input-lg" placeholder="الاسم الاول">
+              </div>
 
-          <div>
-            <button class="btn btn-express btn-lg btn-block">تسجيل الدخول</button>
+              <div class="odd">
+                <input type="text" class="form-control input-lg" placeholder="اسم العائلة">
+              </div>
+
+              <div class="even">
+                <input type="text" class="form-control input-lg" placeholder="رقم الهاتف">
+              </div>
+
+              <div class="odd">
+                <input type="text" class="form-control input-lg" placeholder="رقم الموبايل">
+              </div>
+
+              <div class="even">
+                <input type="email" class="form-control input-lg" placeholder="البريد الإلكتروني">
+              </div>
+
+              <div class="odd">
+                <input type="password" class="form-control input-lg" placeholder="كلمة المرور">
+              </div>
+
+              <div class="even">
+                <input type="password" class="form-control input-lg" placeholder="تأكيد كلمة المرور">
+              </div>
+
+              <div class="odd">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> ان قيامك بعملية التسجيليعني انك توافق على <a href="#">شروط الموقع</a> و أنك مستعد لتحمل عواقب مخالفتك لها.
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn btn-express btn-lg btn-block">تسجيل</button>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
 
       </div>
 
